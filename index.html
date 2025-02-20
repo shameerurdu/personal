@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed Shameer - Personal Site</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lexend', sans-serif;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #fafafa;
+            padding: 0 10%;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin: 8px 0;
+        }
+        p {
+            font-size: 1.2rem;
+            margin: 5px 0;
+            line-height: 1.8;
+            color: #333;
+        }
+        .highlight {
+            font-weight: bold;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            padding: 25px;
+            width: 90%; 
+            max-width: 600px;
+        }
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .content {
+                width: 100%;
+                max-width: 90%;
+                text-align: left;
+            }
+            .banner {
+                position: static;
+                width: 100%;
+                height: 40vh;
+                margin-top: 20px;
+            }
+            h1 { font-size: 2rem; }
+            p { font-size: 1rem; }
+            .content { padding: 15px; }
+        }
+        .button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: #333;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .banner {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 30%;
+            height: 80vh; 
+            top: 10vh;
+            background: url('image.png') no-repeat center center/cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <p style="font-size: 1.2rem; margin: 0;">Hi, I’m</p>
+        <p class="highlight" style="font-size: 2.5rem; font-weight: bold;">MOHAMMED SHAMEER</p>
+        <p style="margin-top: 2px;">I code.</p>
+        <p style="margin-top: 5px;">Mostly <span style="color: #00A1E0; font-weight: bold;">Salesforce </span> stuffs.</p>
+        <p style="margin-top: 5px;">Sometimes other things.</p>
+        <p style="margin-top: 5px;">Always something.</p>
+    </div>
+    <div class="banner"></div>
+</body>
+</html>
